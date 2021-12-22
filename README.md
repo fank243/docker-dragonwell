@@ -2,11 +2,13 @@
 
 alibaba dragonwell jdk
 
-dragonwell8：https://github.com/alibaba/dragonwell8
+## dragonwell
 
-dragonwell11：https://github.com/alibaba/dragonwell11
+https://github.com/alibaba/dragonwell8
 
-dragonwell17：https://github.com/alibaba/dragonwell17
+https://github.com/alibaba/dragonwell11
+
+https://github.com/alibaba/dragonwell17
 
 ## 构建步骤
 
@@ -20,13 +22,13 @@ dragonwell17：https://github.com/alibaba/dragonwell17
 JAVA_VERSION=JDK版本 # 即.tar.gz文件名称
 ```
 
-### 构建镜像
+### docker build
 
 ```bash
 docker build -t jdk:1.8.0_312 .
 ```
 
-### 验证镜像
+### docker run
 
 ```bash
 # 验证
@@ -38,7 +40,7 @@ java -version
 date -R
 ```
 
-### 推送镜像到hub.docker.com
+### docker push
 
 ```bash
 docker login
