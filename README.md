@@ -14,17 +14,17 @@ alibaba dragonwell jdk
 JAVA_VERSION=JDK版本 # 即.tar.gz文件名称
 ```
 
-3. 构建镜像
+### 构建镜像
 
 ```bash
-docker build -t jdk:1.8.0_302 .
+docker build -t jdk:1.8.0_312 .
 ```
 
-4. 验证镜像
+### 验证镜像
 
 ```bash
 # 验证
-docker run --name jdk -it jdk:1.8.0_302 sh
+docker run --name jdk -it jdk:1.8.0_312 sh
 
 java -version
 
@@ -32,15 +32,14 @@ java -version
 date -R
 ```
 
-4. 推送镜像到hub.docker.com
+### 推送镜像到hub.docker.com
 
 ```bash
 docker login
 
 # tag 
-docker tag jdk:1.8.0_302 fank243/dragonwell:1.8.0_302
+docker tag jdk:1.8.0_302 fank243/dragonwell:1.8.0_312
 
 # push
-docker push fank243/dragonwell:1.8.0_302
-
+docker push fank243/dragonwell:1.8.0_312
 ```
