@@ -2,6 +2,12 @@
 
 alibaba dragonwell jdk
 
+dragonwell8：https://github.com/alibaba/dragonwell8
+
+dragonwell11：https://github.com/alibaba/dragonwell11
+
+dragonwell17：https://github.com/alibaba/dragonwell17
+
 ## 构建步骤
 
 请提前使用`rm-jdk.sh`文件清理jdk非必要文件后，重新压缩成.tar.gz文件
