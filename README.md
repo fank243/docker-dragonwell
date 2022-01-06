@@ -25,14 +25,14 @@ JAVA_VERSION=JDK版本 # 即.tar.gz文件名称
 ### docker build
 
 ```bash
-docker build -t jdk:1.8.0_312 .
+docker build -t jdk:${version} .
 ```
 
 ### docker run
 
 ```bash
 # 验证
-docker run --name jdk -it jdk:1.8.0_312 sh
+docker run --name jdk -it jdk:${version} sh
 
 java -version
 
@@ -46,8 +46,8 @@ date -R
 docker login
 
 # tag  
-docker tag jdk:1.8.0_312 fank243/dragonwell:1.8.0_312
+docker tag jdk:${version} fank243/dragonwell:${version}
 
 # push
-docker push fank243/dragonwell:1.8.0_312
+docker push fank243/dragonwell:${version}
 ```
