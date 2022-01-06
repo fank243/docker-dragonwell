@@ -4,11 +4,11 @@ alibaba dragonwell jdk
 
 ## dragonwell
 
-https://github.com/alibaba/dragonwell8
+<https://github.com/alibaba/dragonwell8>
 
-https://github.com/alibaba/dragonwell11
+<https://github.com/alibaba/dragonwell11>
 
-https://github.com/alibaba/dragonwell17
+<https://github.com/alibaba/dragonwell17>
 
 ## 构建步骤
 
@@ -45,8 +45,8 @@ date -R
 ```bash
 docker login
 
-# tag 
-docker tag jdk:1.8.0_302 fank243/dragonwell:1.8.0_312
+# tag  
+docker tag jdk:1.8.0_312 fank243/dragonwell:1.8.0_312
 
 # push
 docker push fank243/dragonwell:1.8.0_312
