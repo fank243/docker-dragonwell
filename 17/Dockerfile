@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 # JDK 版本号
-ARG JAVA_VERSION=jdk-17.0.1
+ARG JAVA_VERSION=jdk-17.0.2
 
 WORKDIR /usr/local/java
 
