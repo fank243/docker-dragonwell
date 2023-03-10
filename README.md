@@ -45,7 +45,7 @@ date -R
 ```bash
 docker login
 
-# tag  
+# tag
 docker tag jdk:${version} fank243/dragonwell:${version}
 
 # push
